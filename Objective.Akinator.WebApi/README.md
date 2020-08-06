@@ -1,11 +1,24 @@
 
-In the project directory, you can run:
+## `Akinator`
 
-### `dotnet run`
+  
 
-Runs the app in the development mode.<br />
-Open [https://localhost:5001](http://localhost:5001) to view it in the browser.
+Simple learning algorithm, using .Net Core and React
 
-### docker build -f ./DockerFile . --tag akinator:latest 
+  
 
-Builds the app in development mode, using [Docker](https://docs.docker.com/)<br />
+## `How to run`
+
+  
+
+You can run this entire application using docker.
+
+  
+
+### `docker-compose up`
+
+  
+
+After installing [Docker](https://docs.docker.com/) on your machine, simply run: 
+
+> docker-compose up -d --build

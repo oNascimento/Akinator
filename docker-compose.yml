@@ -4,8 +4,7 @@ services:
     container_name: akinator-web
     build:
       context: ./objective.akinator.pwa
-      dockerfile:
-        DockerFile
+      dockerfile: DockerFile
     ports:
       - "3000:80"
   akinator-webapi:
