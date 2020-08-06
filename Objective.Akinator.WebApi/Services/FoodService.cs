@@ -47,7 +47,8 @@ namespace Objective.Akinator.WebApi.Services
             if(food.Name.Contains(" ")){
                 var firstName = food.Name.Substring(0, food.Name.IndexOf(" "));
                 var appendedChild = _foodRepository.GetByName(firstName);
-                food.IdRight = appendedChild.Id;
+                if(appendedChild != null)
+                    food.IdRight = appendedChild.Id;
             }
         }
         public async Task<Food> GetById(string id)
