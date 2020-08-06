@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  akinator-web:
+    container_name: akinator-web
+    build:
+      context: ./objective.akinator.pwa
+      dockerfile:
+        DockerFile
+    ports:
+      - "3000:80"
+  akinator-webapi:
+    container_name: akinator-webapi
+    build:
+      context: ./Objective.Akinator.WebApi
+      dockerfile: ./DockerFile
+    ports:
+      - "5000:80"
+      - "5001:443"
